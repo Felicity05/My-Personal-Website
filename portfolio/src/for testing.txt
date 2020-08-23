@@ -1,0 +1,7 @@
+dependencies to install for unit testing:
+npm install --save-dev jest @vue/test-utils vue-jest babel-jest 
+
+dependencies to install for e2e testing (feature, funtional, integrated):
+npm install cypress --save-dev
+
+test
