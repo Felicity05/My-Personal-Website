@@ -2,7 +2,7 @@
   <div class="hello">
     <p class="lead hi">Hi my name is, </p>
     <h1 class="display-3 animated fadeInDown delay-.5s">Arelys Alvarez Padilla</h1>
-    <p class="lead spec animated fadeIn delay-1s">Computer Scientist in development...</p>
+    <p class="lead spec animated fadeIn delay-1s">Computer Scientist in development... now Software Engineer</p>
   </div>
 </template>
 

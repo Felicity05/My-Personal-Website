@@ -50,7 +50,7 @@ export default {
       });
     },
     openResumeNewTab: function() {
-      var pdf = "../static/AAresume2019.pdf";
+      var pdf = "../static/Arelys's Resume 2019-1.pdf";
       window.open(pdf, "_blank");
     }
   }
