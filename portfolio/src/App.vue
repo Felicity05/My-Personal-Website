@@ -1,6 +1,8 @@
 <template>
   <div class="container-fluid" id="app">
 
+    <landing-page></landing-page>
+
     <header class="header" id="home">
         <Header />
     </header>
@@ -42,6 +44,8 @@ import About from "./components/About.vue";
 import Experience from "./components/Experience.vue";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import LandingPage from "./components/LandingPage";
+
 
 
 export default {
@@ -53,7 +57,8 @@ export default {
     About,
     Experience,
     Contact,
-    Projects
+    Projects,
+    LandingPage,
   },
   methods: {
     //custom function

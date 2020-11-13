@@ -1,6 +1,7 @@
 <template>
   <div class="row footer-content">
-    <p class="lead copy">Made with love by Arelys Alvarez © 2019</p>
+    <!-- started 2019 -->
+    <p class="lead copy">Made with ❤ by Arelys Alvarez © 2019 Updated 11/2020 </p> 
     <p>
       <a class="icon" @click="openNewTab('https://github.com/Felicity05')">
         <i class="fa fa-github"></i>
@@ -36,6 +37,7 @@
 }
 .copy {
   padding-top: 0.2em;
+  font-size: 18px;
 }
 .fa {
   font-size: 24px;
