@@ -1,37 +1,17 @@
 <template>
-<div class="hello">
-    <nav class="navbar navbar-expand-lg justify-content-end">
-        <a class="navbar-brand" href="#">
-            <img src="../assets/personal_logo.png" alt="personal brand" class="personal-logo" />
-        </a>
-        <!-- <button class="btn btn-outline-success ml-auto mr-1 resume">Resume</button> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<v-app-bar app color="pink" dark>
 
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul class="navbar-nav text-right">
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('about')">About</a>
-                </li>
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('experience')">Experience</a>
-                </li>
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('contact')">Contact</a>
-                </li>
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('projects')">Projects</a>
-                </li>
-                <li class="nav-item resume">
-                    <a class="nav-link" v-on:click="openResume">
-                        Resume
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+    <div class="d-flex align-center">
+        <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="../assets/personal_logo.png" transition="scale-transition" width="40" height="40" />
+    </div>
+
+    <v-spacer></v-spacer>
+
+    <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+        <span class="mr-2">Latest Release</span>
+        <v-icon>mdi-open-in-new</v-icon>
+    </v-btn>
+</v-app-bar>
 </template>
 
 <script>
@@ -40,7 +20,8 @@
 export default {
     data() {
         return {
-            resumepath: "./public/static/ArelysResume2019-1.pdf"
+            resumepath: "./public/static/ArelysResume2019-1.pdf",
+            header_links: ["About", "Projects", "Experience", "Contact"]
         }
     },
     methods: {
@@ -224,3 +205,37 @@ li>a:hover {
     }
 }
 </style>
+
+<div class="hello">
+    <nav class="navbar navbar-expand-lg justify-content-end">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/personal_logo.png" alt="personal brand" class="personal-logo" />
+        </a>
+        <!-- <button class="btn btn-outline-success ml-auto mr-1 resume">Resume</button> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item menu">
+                    <a class="nav-link" @click="scrollTo('about')">About</a>
+                </li>
+                <li class="nav-item menu">
+                    <a class="nav-link" @click="scrollTo('experience')">Experience</a>
+                </li>
+                <li class="nav-item menu">
+                    <a class="nav-link" @click="scrollTo('contact')">Contact</a>
+                </li>
+                <li class="nav-item menu">
+                    <a class="nav-link" @click="scrollTo('projects')">Projects</a>
+                </li>
+                <li class="nav-item resume">
+                    <a class="nav-link" v-on:click="openResume">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

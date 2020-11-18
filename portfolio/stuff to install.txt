@@ -1,0 +1,5 @@
+npm update acorn --depth 10
+npm install --save-dev cypress@5.6.0  -- error
+npm update dot-prop --depth 8 
+npm update mkdirp --depth 5 
+npm install --save-dev @vue/cli-service@4.5.8
