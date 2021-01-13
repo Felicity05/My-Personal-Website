@@ -4,10 +4,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import vuetify from './plugins/vuetify';
 import ScrollAnimation from './directives/scrollanimation'
+import router from './router'
 
 Vue.directive('scrollanimation', ScrollAnimation);
 
 Vue.config.productionTip = false;
+
+Vue.use(router);
 
 new Vue({
   created(){
@@ -18,5 +21,6 @@ new Vue({
   },
 
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')

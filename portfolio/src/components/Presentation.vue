@@ -17,6 +17,17 @@
     </v-row>
 
     <v-container class="content">
+        <div class="vignette">
+            <svg width="110" height="38" viewBox="0 0 110 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="16" width="88" height="22" fill="#92AF7D"/>
+            <line x1="25.5561" y1="28.7698" x2="39.5561" y2="1.76984" stroke="black"/>
+            <line x1="39.5561" y1="28.7698" x2="53.5561" y2="1.76984" stroke="black"/>
+            <line x1="53.5561" y1="27.7698" x2="67.5561" y2="0.769841" stroke="black"/>
+            <line x1="67.5561" y1="27.7698" x2="81.5561" y2="0.769841" stroke="black"/>
+            <line x1="81.5561" y1="28.7698" x2="95.5561" y2="1.76984" stroke="black"/>
+            <line x1="95.5561" y1="28.7698" x2="109.556" y2="1.76984" stroke="black"/>
+            </svg>
+        </div>
         <v-row no-gutters>
             <v-col cols="12" sm="6" md="8" class="presentation-text mx-auto" style="flex-direction: column">
                 <p class="lead hi"> Hi my name is, </p>
@@ -25,20 +36,21 @@
                  animated fadeIn delay-3s">I'm a Software Engineer currently based in Miami</p>
             </v-col>
             <v-col cols="6" md="4" class="presentation-img">
-                <img class="img-size" src="../assets/presentation-image.png" />
+                
+                <v-img contain v-slot:placeholder src="../assets/presentation-image.png" transition="scale-transition" />
             </v-col>
         </v-row>
     </v-container>
 
     <!-- <div style="height: 100vh"> -->
 
-    </div>
+    <!-- </div> -->
 
 </v-container>
 </template>
 
 <script>
-import ScrollOut from "scroll-out";
+// import ScrollOut from "scroll-out";
 
 export default {
     name: 'Presentation',
@@ -50,10 +62,11 @@ export default {
         window.removeEventListener('scroll', this.handleScroll);
     },
     methods: {
-        handleScroll(event) {
-            console.log('scroll happening')
+        handleScroll: function () {
+            // console.log('scroll happening');
+            // console.log(event);
             // Any code to be executed when the window is scrolled
-        }
+        } 
     }
 
     // mounted() {
@@ -81,6 +94,12 @@ export default {
     -webkit-clip-path: circle(0px at 85% 55%);
     transition: all 1s ease-in;
 } */
+/* Rectangle 4 */
+.vignette {
+    position: fixed;
+    top: 125px;
+    right: 370px;
+}
 
 .container {
     background-color: #F9F2E6;
@@ -123,7 +142,7 @@ export default {
     /* clip-path: circle(0px at 85% 55%);
     -webkit-clip-path: circle(0px at 85% 55%);
     transition: all 2s ease-in;    */
-    /* display: none; */
+    display: none;
 }
 
 /* .mask .start {
@@ -131,7 +150,7 @@ export default {
   -webkit-clip-path: circle(2000px at 85% 55%);
 } */
 
-.before-enter {
+/* .before-enter {
     clip-path: circle(2000px at 85% 55%);
     -webkit-clip-path: circle(2000px at 85% 55%);
 }
@@ -140,7 +159,7 @@ export default {
     clip-path: circle(0px at 85% 55%);
     -webkit-clip-path: circle(0px at 85% 55%);
     transition: all 2s ease-in;
-}
+} */
 
 .before-leave {}
 

@@ -1,17 +1,28 @@
 <template>
-<v-app-bar app color="pink" dark>
+<v-container>
+    <v-toolbar app flat dense color="transparent">
+        <div class="d-flex align-center">
+            <v-img alt="Personal Logo" class="shrink mr-2" contain src="../assets/code girl (1).svg" transition="scale-transition" width="80" height="80" />
+        </div>
 
-    <div class="d-flex align-center">
-        <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="../assets/personal_logo.png" transition="scale-transition" width="40" height="40" />
-    </div>
+        <v-toolbar-title>
+            <span class="font-weight-light">love</span>
+            <span class="font-weight-bold">code</span>
+        </v-toolbar-title>
 
-    <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
 
-    <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-    </v-btn>
-</v-app-bar>
+        <v-toolbar-items>
+            <v-btn text color="#698191" v-for="link in header_links" :key="link">
+                {{ link }}
+            </v-btn>
+            <v-btn text color="#698191">
+                Resume
+            </v-btn>
+        </v-toolbar-items>
+
+    </v-toolbar>
+</v-container>
 </template>
 
 <script>
@@ -39,7 +50,7 @@ export default {
             // "./src/static/Arelys's Resume 2019-1.pdf";
             // Personal%20Website/portfolio/src/static/Arelys's%20Resume%202019-1.pdf
             window.open("../assets/ArelysResume2019-1.pdf", "_blank");
-            console.log("triying to open pdf");
+            // console.log("triying to open pdf");
         }
     }
 };
@@ -47,7 +58,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
-<style scoped>
+<style scoped lang="scss">
 .personal-logo {
     width: 30px;
     height: 40px;
