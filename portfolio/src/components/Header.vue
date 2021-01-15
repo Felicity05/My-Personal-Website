@@ -6,8 +6,8 @@
         </div>
 
         <v-toolbar-title>
-            <span class="font-weight-light">love</span>
-            <span class="font-weight-bold">code</span>
+            <span class="font-weight-light">#love</span>
+            <span class="font-weight-bold">Code</span>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>

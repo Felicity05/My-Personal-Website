@@ -19,6 +19,7 @@
     "jquery": "^3.5.1",
     "material-design-icons": "^3.0.1",
     "normalize.css": "^8.0.1",
+    "ress": "^3.0.0",
     "scroll-out": "^2.2.12",
     "vue": "^2.6.12",
     "vue-pdf": "^4.2.0",

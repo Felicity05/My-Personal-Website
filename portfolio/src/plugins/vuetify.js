@@ -13,7 +13,7 @@ export default new Vuetify({
                 secondary: '#698191',
                 accent: '#F79297',
                 error: '#b71c1c',
-            },
+            }, 
         },
     },
 });
