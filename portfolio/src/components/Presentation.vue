@@ -1,6 +1,6 @@
 // TO DO: find a cool animation to put here
 <template>
-<v-container fill-height class="out-container">
+<v-container  class="out-container">
     <!-- FIXME: fix animation to actually work on scroll -->
     <v-row no-gutters class="mask" v-scrollanimation>
         <ul class="items">
@@ -18,7 +18,7 @@
 
     <!-- offset-lg-9 offset-md-9 offset-xs-9 offset-sm-9 -->
     <v-row no-gutters>
-        <svg class="ml-auto" width="110" height="38" viewBox="0 0 110 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="ml-auto mt-9" width="110" height="38" viewBox="0 0 110 38" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="16" width="88" height="22" fill="#92AF7D" />
             <line x1="25.5561" y1="28.7698" x2="39.5561" y2="1.76984" stroke="black" />
             <line x1="39.5561" y1="28.7698" x2="53.5561" y2="1.76984" stroke="black" />
@@ -51,14 +51,14 @@
                             text-xl-h5" >I'm a Software Engineer currently based in Miami</p>
             </v-col>
 
-            <v-col cols="6">
-                <v-img contain v-slot:placeholder src="../assets/presentation-image.png" transition="scale-transition" />
+            <v-col cols="6" class="sm-img-center">
+                <v-img contain class="img-size" v-slot:placeholder src="../assets/presentation-image.png" transition="scale-transition" />
             </v-col>
         </v-row>
     </v-container>
 
     <v-row no-gutters>
-        <svg width="110" height="37" viewBox="0 0 110 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="mb-12" width="110" height="37" viewBox="0 0 110 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect y="15" width="88" height="22" fill="#FABD02" />
             <line x1="25.5561" y1="28.7698" x2="39.5561" y2="1.76984" stroke="black" />
             <line x1="39.5561" y1="28.7698" x2="53.5561" y2="1.76984" stroke="black" />
@@ -131,6 +131,12 @@ export default {
     .row-wrap {
         flex-direction: column-reverse;
       }
+    .presentation-text {
+        max-width: 100%;
+    }
+    .sm-img-center {
+        margin: 0 auto;
+    }
 }
 
 
@@ -149,8 +155,11 @@ export default {
 }
 
 .img-size {
-    width: 395px;
-    height: 520px;
+    /* width: 395px;
+    height: 520px; */
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .mask {
