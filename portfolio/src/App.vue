@@ -9,10 +9,15 @@
         
             <presentation></presentation>
 
-            <!-- <about></about> -->
+            <!-- <about></about> 
 
-           
+           <experience></experience>
+
+           <projects></projects> -->
       
+            <contact></contact>
+
+            <app-footer></app-footer>
 
     </v-main>
 
@@ -28,16 +33,22 @@
 
 <script>
 import About from './components/About.vue';
+import Contact from './components/Contact.vue';
 import Experience from './components/Experience.vue';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Presentation from './components/Presentation.vue';
+import Projects from './components/Projects.vue';
+import Footer from './components/Footer';
 
 export default {
     components: {
-        'app-header': Header,
+        'app-header': NavBar,
         Presentation,
-        About,
-        Experience,
+        // About,
+        // Experience,
+        // Projects,
+        Contact,
+        'app-footer': Footer,
     }
 }
 </script>
@@ -45,7 +56,7 @@ export default {
 <style>
 #app {
     background: #F9F2E6;
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-family: "Avenir", Helvetica, Arial, sans-serif, "Anonymous-Pro", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #698191;

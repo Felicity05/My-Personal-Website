@@ -34,6 +34,8 @@
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 0;
+  background-color: #8891A4;
+  color: #E5E5E5;
 }
 .copy {
   padding-top: 0.2em;
@@ -44,10 +46,10 @@
   /* color: #5CDB95 */
 }
 a:not([href]) {
-  color: #5cdb95;
+  color: #F79297;
 }
 a:not([href]):hover {
-  color: grey;
+  color: lightgray;
 }
 .fa-github {
   padding-right: 1em;
