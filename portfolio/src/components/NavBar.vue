@@ -1,252 +1,71 @@
 <template>
-<v-container>
-    <v-toolbar flat dense color="transparent">
+<v-container fluid style="padding:0px; marging: 0px"> 
+    <!--FIXME: padding top = 0 -->
+    <v-app-bar flat  color="transparent"  style="padding: 0px">
         <div class="d-flex align-center">
-            <v-img alt="Personal Logo" class="shrink mr-2" contain src="../assets/code girl (1).svg" transition="scale-transition" width="80" height="80" />
+            <router-link to='/' tag="span" style="cursor: pointer">
+            <v-img contain>
+                <svg width="72" height="35" viewBox="0 0 109 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.8516 45.209L9.49805 46.5977L0.498047 37.5977L9.49805 28.5977L10.8516 30.0039L3.25781 37.5977L10.8516 45.209ZM108.146 37.5977L99.1465 46.5977L97.7754 45.209L105.369 37.5977L97.7754 30.0039L99.1465 28.5977L108.146 37.5977Z" fill="#8891A4" />
+                    <path d="M22.4066 69.5923C29.8602 65.5963 35.7584 59.2935 39.7547 51.8661C45.7317 40.7577 49.7086 28.6258 52.3882 16.3355C53.2166 12.5355 53.8208 8.01418 53.8208 4.10958C53.8208 3.00603 53.8208 6.31667 53.8208 7.42021C53.8208 9.68222 53.3231 11.9579 53.3519 14.3282C53.4509 22.4522 55.216 30.8038 56.3996 38.8321C57.8081 48.3859 63.5309 76.7404 60.8799 67.4548C58.2427 58.2177 47.6159 51.8671 40.9269 45.688C37.2401 42.2822 28.9808 38.1543 23.8132 38.1543C18.9979 38.1543 25.0967 36.7467 26.8869 36.7467C33.0863 36.7467 38.4984 37.7005 44.5476 38.9885C51.0219 40.3671 56.9207 40.9697 63.5629 40.9697C69.4721 40.9697 78.3995 37.1505 81.5882 31.9502C83.3582 29.0635 82.8907 25.9607 82.8907 22.67C82.8907 19.7722 83.4722 16.2442 81.9529 13.6505C79.6124 9.65481 76.7979 5.47009 73.0444 2.59763C70.9165 0.969172 66.7657 -0.168129 65.6467 3.06686C62.5734 11.952 62.1029 21.3444 61.4269 30.6468C60.8309 38.8476 61.0241 47.4447 62.7293 55.4896C63.4394 58.8396 64.2724 62.1461 65.0737 65.4736C65.5133 67.2994 66.4803 69.1072 66.4803 71" stroke="#8891A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </v-img>
+            </router-link>
+
+            <!-- <v-img alt="Personal Logo" class="shrink mr-2" contain src="../assets/code girl (1).svg" transition="scale-transition" width="80" height="80" /> -->
         </div>
 
-        <v-toolbar-title>
+        <!-- <v-toolbar-title>
             <span class="font-weight-light">#love</span>
             <span class="font-weight-bold">Code</span>
-        </v-toolbar-title>
+        </v-toolbar-title> -->
 
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-            <v-btn text color="#698191" v-for="link in header_links" :key="link">
+            <!-- <v-btn text color="#698191" v-for="link in header_links" :key="link">
                 {{ link }}
             </v-btn>
             <v-btn text color="#698191">
                 Resume
+            </v-btn> -->
+            <v-btn color="transparent" elevation="0" @click="navOpen = !navOpen">
+                <svg width="35" height="13" viewBox="0 0 35 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="28" y2="0.5" stroke="#AEADAD" />
+                    <line y1="12.5" x2="28" y2="12.5" stroke="#AEADAD" />
+                    <line x1="7" y1="6.5" x2="35" y2="6.5" stroke="#AEADAD" />
+                </svg>
             </v-btn>
         </v-toolbar-items>
+    </v-app-bar>
 
-    </v-toolbar>
+    <sliding-menu :open="navOpen" />
+
 </v-container>
 </template>
 
 <script>
 // import pdf from 'vue-pdf'
+import SlidingMenu from './SlidingMenu.vue';
 
 export default {
+    components: {
+        SlidingMenu,
+    },
     data() {
         return {
             resumepath: "./public/static/ArelysResume2019-1.pdf",
-            header_links: ["About", "Projects", "Experience", "Contact"]
+            header_links: ["About", "Projects", "Experience", "Contact"],
+            navOpen: false,
         }
     },
     methods: {
-        //custom function
-        scrollTo(element) {
-            const el = document.querySelector("#" + element);
-            el.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        },
-        //FIXME: open pdf when clicked in the button
-        openResume: function () {
-            // var pdf = "../static/ArelysResume2019-1.pdf";
-            // "./src/static/Arelys's Resume 2019-1.pdf";
-            // Personal%20Website/portfolio/src/static/Arelys's%20Resume%202019-1.pdf
-            window.open("../assets/ArelysResume2019-1.pdf", "_blank");
-            // console.log("triying to open pdf");
-        }
+        
     }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
 
-<style scoped lang="scss">
-.personal-logo {
-    width: 30px;
-    height: 40px;
-    color: #5cdb95;
-}
-
-.display-3 {
-    margin-left: 7%;
-    text-align: left;
-    padding-top: 23rem;
-}
-
-.lead {
-    margin-left: 7%;
-    font-size: 30px;
-}
-
-/* .navbar {
-  position: fixed;
-} */
-.navbar-expand-lg {
-    padding-top: 0;
-    margin: 0 auto;
-    /* background-color: #212529;
-  opacity: 20%; */
-}
-
-.navbar-brand {
-    margin-right: auto !important;
-    padding-left: 0.7em;
-    padding-top: .3em;
-    padding-bottom: 0;
-}
-
-li>a {
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-}
-
-li>a:not([href]) {
-    color: #5cdb95;
-}
-
-li>a:hover {
-    color: azure;
-}
-
-.menu>a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: #5cdb95;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: 0.25s linear;
-    box-shadow: 0 0 10px 2px #9cf5a6;
-}
-
-.menu>a:hover:before,
-.menu>a:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-.resume>a:before {
-    content: "";
-    /* background: #9CF5A6; */
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    border-radius: 5px;
-    transform: scaleX(0);
-    animation: 1.4s forwards no-hover-o linear;
-    animation-fill-mode: forwards;
-    z-index: -1;
-    box-shadow: 0 0 10px 2px #9cf5a6;
-}
-
-.resume>a:hover:before,
-.resume>a:focus:before {
-    animation: 0.5s forwards hover-o linear;
-    animation-fill-mode: forwards;
-}
-
-.resume>button:before {
-    content: "";
-    /* background: #9CF5A6; */
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    border-radius: 5px;
-    transform: scaleX(0);
-    animation: 1.4s forwards no-hover-o linear;
-    animation-fill-mode: forwards;
-    z-index: -1;
-    box-shadow: 0 0 10px 2px #9cf5a6;
-}
-
-.resume>button:hover:before,
-.resume>button:focus:before {
-    animation: 0.5s forwards hover-o linear;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hover-o {
-    0% {
-        transform: scaleX(0);
-        height: 5px;
-    }
-
-    45% {
-        transform: scaleX(1.05);
-        height: 5px;
-    }
-
-    55% {
-        height: 5px;
-    }
-
-    100% {
-        transform: scaleX(1.05);
-        height: 2.4rem;
-    }
-}
-
-@keyframes no-hover-o {
-    0% {
-        transform: scaleX(1.05);
-        height: 2.4rem;
-    }
-
-    45% {
-        height: 5px;
-    }
-
-    55% {
-        transform: scaleX(1.05);
-        height: 5px;
-        opacity: 1;
-    }
-
-    100% {
-        transform: scaleX(0);
-        height: 5px;
-        opacity: 0.02;
-    }
-}
 </style>
-
-<div class="hello">
-    <nav class="navbar navbar-expand-lg justify-content-end">
-        <a class="navbar-brand" href="#">
-            <img src="../assets/personal_logo.png" alt="personal brand" class="personal-logo" />
-        </a>
-        <!-- <button class="btn btn-outline-success ml-auto mr-1 resume">Resume</button> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-            <ul class="navbar-nav text-right">
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('about')">About</a>
-                </li>
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('experience')">Experience</a>
-                </li>
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('contact')">Contact</a>
-                </li>
-                <li class="nav-item menu">
-                    <a class="nav-link" @click="scrollTo('projects')">Projects</a>
-                </li>
-                <li class="nav-item resume">
-                    <a class="nav-link" v-on:click="openResume">
-                        Resume
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>

@@ -1,13 +1,11 @@
 <template>
 <v-app>
-
-    <v-app-bar app flat dense color="transparent" hide-on-scroll>
-        <app-header />
-    </v-app-bar>
+    <app-header />
 
     <v-main>
         
-            <presentation></presentation>
+          <router-view></router-view>
+            <!-- <presentation></presentation> -->
 
             <!-- <about></about> 
 
@@ -15,40 +13,39 @@
 
            <projects></projects> -->
       
-            <contact></contact>
+            <!-- <contact></contact> -->
 
-            <app-footer></app-footer>
+            
 
     </v-main>
 
-    <!-- <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div> -->
+    <!-- <v-footer padless>
+      <app-footer></app-footer>
+    </v-footer> -->
+
 </v-app>
 </template>
 
 <script>
-import About from './components/About.vue';
-import Contact from './components/Contact.vue';
-import Experience from './components/Experience.vue';
 import NavBar from './components/NavBar';
-import Presentation from './components/Presentation.vue';
-import Projects from './components/Projects.vue';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
+// import About from './components/About.vue';
+// import Contact from './components/Contact.vue';
+// import Projects from './components/Projects.vue';
+// import Experience from './components/Experience.vue';
+// import Presentation from './components/Presentation.vue';
+
+
 
 export default {
     components: {
         'app-header': NavBar,
-        Presentation,
+        // Presentation,
         // About,
         // Experience,
         // Projects,
-        Contact,
-        'app-footer': Footer,
+        // Contact,
+        // 'app-footer': Footer,
     }
 }
 </script>
@@ -60,5 +57,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #698191;
+    margin: 0px;
+    padding: 0px;
 }
 </style>

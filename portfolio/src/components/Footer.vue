@@ -1,57 +1,71 @@
 <template>
-  <div class="row footer-content">
-    <!-- started 2019 -->
-    <p class="lead copy">Made with ❤ by Arelys Alvarez © 2019 Updated 11/2020 </p> 
-    <p>
-      <a class="icon" @click="openNewTab('https://github.com/Felicity05')">
-        <i class="fa fa-github"></i>
-      </a>
-
-      <a class="icon" @click="openNewTab('https://www.linkedin.com/in/arelys-alvarez-9aaa92123/')">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </p>
-  </div>
+<!-- FIXME: length of footer goes over the length og the page -->
+<v-container fluid style="padding: 0px">
+    <v-row class="footer-content">
+        <!-- started 2019 -->
+        <v-col class="text">
+            <p>Made with ❤ by Arelys Alvarez © 2019 Updated 11/2020 </p>
+        </v-col>
+        <v-col class="icons">
+            <a class="icon" @click="openNewTab('https://github.com/Felicity05')">
+                <i class="fa fa-github"></i>
+            </a>
+            <a class="icon" @click="openNewTab('https://www.linkedin.com/in/arelys-alvarez-9aaa92123/')">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </v-col>
+    </v-row>
+</v-container>
 </template>
 
-
 <script>
-    export default {
+export default {
     name: "Footer",
-    
+
     methods: {
         openNewTab(tab) {
-            window.open(tab,'_blank')
+            window.open(tab, '_blank')
         }
     }
 }
 </script>
 
 <style scoped>
+.footer-content {
+    background-color: #8891A4;
+    flex-direction: column;
+}
+
 .footer-content p {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  background-color: #8891A4;
-  color: #E5E5E5;
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #E5E5E5;
 }
-.copy {
-  padding-top: 0.2em;
-  font-size: 18px;
+
+.text {
+    padding: 0;
+    font-size: 17px;
+    text-align: center;
+    flex: auto;
 }
+
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
 .fa {
-  font-size: 24px;
-  /* color: #5CDB95 */
+    font-size: 24px;
+    color: #F79297;
 }
-a:not([href]) {
-  color: #F79297;
-}
-a:not([href]):hover {
-  color: lightgray;
-}
+
+/* .fa:hover {
+    color: lightgray;
+} */
+
 .fa-github {
-  padding-right: 1em;
+    padding-right: 1em;
 }
 </style>

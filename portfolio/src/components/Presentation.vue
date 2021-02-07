@@ -1,6 +1,6 @@
 // TO DO: find a cool animation to put here
 <template>
-<v-container > 
+<v-container> 
     <!-- FIXME: fix animation to actually work on scroll -->
     <v-row no-gutters class="mask" v-scrollanimation>
         <ul class="items">

@@ -13,7 +13,10 @@ module.exports = {
                     'sass-loader'
                 ]
             }
-        ]
+        ], 
+        resolve: {
+            extensions: ['.js', '.jsx', '.scss', '.png']
+        }
     },
     // plugin omitted
 }
