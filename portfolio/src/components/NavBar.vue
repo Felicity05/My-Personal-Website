@@ -1,5 +1,5 @@
 <template>
-<v-container fluid style="padding:0px; marging: 0px"> 
+<v-container style="padding:0px; marging: 0px"> 
     <!--FIXME: padding top = 0 -->
     <v-app-bar flat  color="transparent"  style="padding: 0px">
         <div class="d-flex align-center">
