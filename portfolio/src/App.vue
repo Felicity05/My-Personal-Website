@@ -1,46 +1,26 @@
 <template>
-  <div class="container-fluid" id="app">
-    <presentation />
-
-    <footer class="footer">
-      <app-footer />
-    </footer>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-// import NavBar from './components/NavBar';
-import Footer from "./Components/Footer";
-// import About from './components/About.vue';
-// import Contact from './components/Contact.vue';
-// import Projects from './components/Projects.vue';
-// import Experience from './components/Experience.vue';
-import Presentation from "./Pages/Presentation.vue";
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
+  name: 'App',
   components: {
-    // 'app-header': NavBar,
-    Presentation,
-    // About,
-    // Experience,
-    // Projects,
-    // Contact,
-    "app-footer": Footer,
-  },
-};
+    HelloWorld
+  }
+}
 </script>
 
 <style>
 #app {
-  background: #f9f2e6;
-  font-family: "Avenir", Helvetica, Arial, sans-serif, "Anonymous-Pro",
-    monospace;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #698191;
-  margin: 0px;
-  padding: 0px;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
-
-@import'~bootstrap/dist/css/bootstrap.css'
 </style>
