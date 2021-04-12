@@ -1,21 +1,21 @@
 <template>
 <!-- FIXME: length of footer goes over the length og the page -->
-<v-container fluid style="padding: 0px">
-    <v-row class="footer-content">
+<div fluid style="padding: 0px">
+    <div class="footer-content">
         <!-- started 2019 -->
-        <v-col class="text">
+        <div class="text">
             <p>Made with ❤ by Arelys Alvarez © 2019 Updated 11/2020 </p>
-        </v-col>
-        <v-col class="icons">
+        </div>
+        <div class="icons">
             <a class="icon" @click="openNewTab('https://github.com/Felicity05')">
                 <i class="fa fa-github"></i>
             </a>
             <a class="icon" @click="openNewTab('https://www.linkedin.com/in/arelys-alvarez-9aaa92123/')">
                 <i class="fa fa-linkedin"></i>
             </a>
-        </v-col>
-    </v-row>
-</v-container>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>

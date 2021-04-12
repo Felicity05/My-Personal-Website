@@ -1,14 +1,14 @@
 <template>
-<v-container fluid class="box">
-    <v-row>
+<div class="box">
+    <div>
         <transition name="show">
-            <v-col class="slideMenu" v-if="open" style="border: 2px solid red">
+            <div class="slideMenu" v-if="open" style="border: 2px solid red">
                 <transition-group appear name="fade" class="menu">
-                    <v-row :key="1">
+                    <div :key="1">
                         <p>{{ open }}</p>
                         <v-icon class="close-icon mr-auto" @click="!open"> clear </v-icon>
-                    </v-row>
-                    <v-col class="sidebar-element" v-for="(item, index) in navElements" :key="item.title" :style="{'--index': index}">
+                    </div>
+                    <div class="sidebar-element" v-for="(item, index) in navElements" :key="item.title" :style="{'--index': index}">
                         <router-link :to="item.path">
                             <h1 class=" menu-item
                                 text-h4            
@@ -16,15 +16,15 @@
                                 text-lg-h2
                                 pb-lg-3">{{ item.title }}</h1>
                         </router-link>
-                    </v-col>
+                    </div>
                     <!-- <a href="#" class="sidebar-element" v-for="(item, index) in navElements" :key="item" :style="{'--index': index}">
                     <p>{{ item }}</p>
                 </a> -->
                 </transition-group>
-            </v-col>
+            </div>
         </transition>
-    </v-row>
-</v-container>
+    </div>
+</div>
 </template>
 
 <script>
@@ -51,12 +51,6 @@ export default {
                     path: '/Contact'
                 }
             ]
-        }
-    },
-    methods: {
-        closeMenu: function () {
-            open = !open;
-            console.log(open);
         }
     },
 }

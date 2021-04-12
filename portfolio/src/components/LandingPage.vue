@@ -1,7 +1,7 @@
 <template>
-    <v-container>
+    <div>
         <!-- FIXME: fix animation to actually work on scroll -->
-    <v-row no-gutters class="mask">
+    <div no-gutters class="mask">
         <ul class="items">
             <li>
                 <p class="display-4 start-text">code.</p>
@@ -13,8 +13,8 @@
                 <p class="display-1 start-text">inspire</p>
             </li>
         </ul>
-    </v-row>
-    </v-container>
+    </div>
+    </div>
 </template>
 
 <script>

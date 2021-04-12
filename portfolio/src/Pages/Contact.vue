@@ -1,26 +1,27 @@
 <template>
-<v-container>
+<container>
     <!-- <v-responsive :aspect-ratio="3/2"> -->
-    <img src="../assets/contact(1).png" class="image-fit">
-    <p class="centered">hello there</p>
-        <v-row no-gutters style="border: 1px solid red" class="">
-            <v-col cols="12">
+    <div id="bg">
+    <img src="../assets/images/contact(1).png" class="image-fit" >
+    </div>
+        <div class="row"  style="border: 1px solid red" >
+            <div cols="12">
                 <h2 class="diplay-4 page-title aos-init aos-animate" data-aos="fade" data-aos-duration="1000">Let's get in Touch!</h2>
-            </v-col>
+            </div>
 
-            <v-col cols="6" offset="3">
+            <div cols="6" offset="3">
                 <p class="lead contact-message aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1000">
                     I’m very friendly and always open for new oportunities to learn and apply my knowledge.
                     Feel free to drop me a message for bussiness inquieries or just to say hi... :)
                 </p>
-            </v-col>
+            </div>
 
-            <v-col cols="6" offset="3" style="border: 1px solid orange" class=" aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
-                <v-btn class="ma-2" outlined color="#F79297" align="center">
+            <div cols="6" offset="3" style="border: 1px solid orange" class=" aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+                <button class="ma-2" outlined color="#F79297" align="center">
                     <a href="mailto:aalva456@fiu.edu?subject=Hi, how are you?">Contact me!</a>
-                </v-btn>
-            </v-col>
-        </v-row>
+                </button>
+            </div>
+        </div>
         <img>
     
     <!-- </v-responsive> -->
@@ -31,7 +32,7 @@
         </a>
     </div> -->
 
-</v-container>
+</container>
 </template>
 
 <script>
@@ -55,22 +56,41 @@ a {
     text-decoration: none;
 }
 
-.contact {
-    background-image: url("../assets/contact(1).png");
+/* .contact {
+    background-image: url("../assets/images/contact(1).png");
     max-width: 100%;
     max-height: 100%;
+} */
+
+#bg {
+  position: fixed; 
+  top: 0%; 
+  left: 0%; 
+  width: 100%; 
+  height: 100%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
 
-.img {
+
+/* .img {
     opacity: 30%;
-}
+} */
 
-.centered {
+/* .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .page-title {
     text-align: left;
@@ -84,14 +104,14 @@ a {
     text-align: center;
     /* margin-bottom: 5em; */
 }
-
+/* 
 .image-fit{
-  /* height: 100%; */
+    height: 100%; 
   width: 100%;
   object-fit: cover;
-}
+} */
 
-.top {
+/* .top {
     cursor: pointer;
     position: fixed;
     width: 60px;
@@ -103,10 +123,10 @@ a {
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 5px #3c4a59;
-}
+} */
 
-.my-float {
+/* .my-float {
     margin-top: 12px;
     font-size: 34px;
-}
+} */
 </style>

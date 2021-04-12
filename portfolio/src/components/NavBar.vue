@@ -1,35 +1,29 @@
 <template>
-<v-container style="padding:0px; marging: 0px"> 
+<div style="padding:0px; marging: 0px"> 
     <!--FIXME: padding top = 0 -->
-    <v-app-bar flat  color="transparent"  style="padding: 0px">
-        <div class="d-flex align-center">
+    <!-- <v-app-bar flat  color="transparent"  style="padding: 0px"> -->
+        <!-- <div class="d-flex align-center">
             <router-link to='/' tag="span" style="cursor: pointer">
-            <v-img contain>
-                <svg width="72" height="35" viewBox="0 0 109 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.8516 45.209L9.49805 46.5977L0.498047 37.5977L9.49805 28.5977L10.8516 30.0039L3.25781 37.5977L10.8516 45.209ZM108.146 37.5977L99.1465 46.5977L97.7754 45.209L105.369 37.5977L97.7754 30.0039L99.1465 28.5977L108.146 37.5977Z" fill="#8891A4" />
-                    <path d="M22.4066 69.5923C29.8602 65.5963 35.7584 59.2935 39.7547 51.8661C45.7317 40.7577 49.7086 28.6258 52.3882 16.3355C53.2166 12.5355 53.8208 8.01418 53.8208 4.10958C53.8208 3.00603 53.8208 6.31667 53.8208 7.42021C53.8208 9.68222 53.3231 11.9579 53.3519 14.3282C53.4509 22.4522 55.216 30.8038 56.3996 38.8321C57.8081 48.3859 63.5309 76.7404 60.8799 67.4548C58.2427 58.2177 47.6159 51.8671 40.9269 45.688C37.2401 42.2822 28.9808 38.1543 23.8132 38.1543C18.9979 38.1543 25.0967 36.7467 26.8869 36.7467C33.0863 36.7467 38.4984 37.7005 44.5476 38.9885C51.0219 40.3671 56.9207 40.9697 63.5629 40.9697C69.4721 40.9697 78.3995 37.1505 81.5882 31.9502C83.3582 29.0635 82.8907 25.9607 82.8907 22.67C82.8907 19.7722 83.4722 16.2442 81.9529 13.6505C79.6124 9.65481 76.7979 5.47009 73.0444 2.59763C70.9165 0.969172 66.7657 -0.168129 65.6467 3.06686C62.5734 11.952 62.1029 21.3444 61.4269 30.6468C60.8309 38.8476 61.0241 47.4447 62.7293 55.4896C63.4394 58.8396 64.2724 62.1461 65.0737 65.4736C65.5133 67.2994 66.4803 69.1072 66.4803 71" stroke="#8891A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </v-img>
-            </router-link>
+            <img src="../assets/images/signature.svg" contain/>
+            </router-link> -->
 
             <!-- <v-img alt="Personal Logo" class="shrink mr-2" contain src="../assets/code girl (1).svg" transition="scale-transition" width="80" height="80" /> -->
-        </div>
+        <!-- </div> -->
 
         <!-- <v-toolbar-title>
             <span class="font-weight-light">#love</span>
             <span class="font-weight-bold">Code</span>
         </v-toolbar-title> -->
 
-        <v-spacer></v-spacer>
 
-        <v-toolbar-items>
+        <!-- <v-toolbar-items> -->
             <!-- <v-btn text color="#698191" v-for="link in header_links" :key="link">
                 {{ link }}
             </v-btn>
             <v-btn text color="#698191">
                 Resume
             </v-btn> -->
-            <v-btn color="transparent" elevation="0" @click="navOpen = !navOpen">
+            <!-- <v-btn color="transparent" elevation="0" @click="navOpen = !navOpen">
                 <svg width="35" height="13" viewBox="0 0 35 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="28" y2="0.5" stroke="#AEADAD" />
                     <line y1="12.5" x2="28" y2="12.5" stroke="#AEADAD" />
@@ -37,11 +31,11 @@
                 </svg>
             </v-btn>
         </v-toolbar-items>
-    </v-app-bar>
+    </v-app-bar> -->
 
     <sliding-menu :open="navOpen" />
 
-</v-container>
+</div>
 </template>
 
 <script>

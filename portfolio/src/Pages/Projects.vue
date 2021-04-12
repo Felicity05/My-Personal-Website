@@ -5,7 +5,7 @@
     <div class="row style1" v-for="(project,index) in projects" :key="index">
         <div class="col-sm-6 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
             <div class="out1">
-                <img class="p-image1" :src="require('../assets/projects/'+project.img)" alt="" />
+                <img class="p-image1" :src="require('../assets/projects_images/'+project.img)" alt="" />
             </div>
         </div>
 

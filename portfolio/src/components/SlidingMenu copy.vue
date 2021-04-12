@@ -1,6 +1,6 @@
 <template>
-<v-container >
-    <v-row class="slideMenu" v-if="open" style="border: 2px solid red">
+<div >
+    <div class="slideMenu" v-if="open" style="border: 2px solid red">
         <transition name="show">
             <transition-group appear name="fade" class="menu">
                 <v-icon class="close-icon" :key="1" :close="!open"> clear </v-icon>
@@ -9,8 +9,8 @@
                 </a>
             </transition-group>
         </transition>
-    </v-row>
-</v-container>
+    </div>
+</div>
 </template>
 
 <script>

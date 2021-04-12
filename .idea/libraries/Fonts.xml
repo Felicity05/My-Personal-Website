@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Fonts">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Fonts/Vanity_-_TTF.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Fonts/Arkhip_font.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

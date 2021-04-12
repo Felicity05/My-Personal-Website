@@ -1,10 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Presentation from "./components/Presentation";
-import About from './components/About.vue';
-import Contact from './components/Contact.vue';
-import Projects from './components/Projects.vue';
-import Experience from './components/Experience.vue';
+import Presentation from "./Pages/Presentation";
+import About from './Pages/About.vue';
+import Contact from './Pages/Contact.vue';
+import Projects from './Pages/Projects.vue';
+import Experience from './Pages/Experience.vue';
 
 Vue.use(Router);
 

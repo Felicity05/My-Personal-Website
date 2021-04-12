@@ -1,16 +1,16 @@
 <template>
-<v-container>
-    <v-row>
+<div>
+    <div>
         <svg width="44" height="47" viewBox="0 0 64 67" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 25px">
             <ellipse cx="27" cy="39.5" rx="27" ry="27.5" fill="#FABD02" />
             <path d="M61.5 27.5C61.5 41.3506 50.4879 52.5 37 52.5C23.5121 52.5 12.5 41.3506 12.5 27.5C12.5 13.6494 23.5121 2.5 37 2.5C50.4879 2.5 61.5 13.6494 61.5 27.5Z" stroke="#698191" stroke-width="5" />
             <path d="M61.5 27.5C61.5 41.3506 50.4879 52.5 37 52.5C23.5121 52.5 12.5 41.3506 12.5 27.5C12.5 13.6494 23.5121 2.5 37 2.5C50.4879 2.5 61.5 13.6494 61.5 27.5Z" stroke="#698191" stroke-width="5" />
         </svg>
-        <v-row>
+        <div>
             <h2 class="diplay-4 know-me aos-init aos-animate" data-aos="fade" data-aos-duration="1000">Get to know me!</h2>
-        </v-row>
-        <v-row>
-            <v-col class="lead intro">
+        </div>
+        <div>
+            <div class="lead intro">
                 <p>
                     My name is Arelys Alvarez Padilla.
                     I’m a recent Computer Science grad with a passion for coding and all things beauty.
@@ -23,11 +23,11 @@
                     here!
                     </router-link>
                 </p>
-            </v-col>
-            <v-col>
-                <v-avatar class="me-out1" size="356"></v-avatar>
+            </div>
+            <div>
+                <!-- <v-avatar class="me-out1" size="356"></v-avatar>
                 <v-avatar class="me-out2" size="356">
-                    <v-img class="me" src="@/assets/me-recent.png"></v-img>
+                    <v-img class="me" src="@/assets/images/me-recent.png"></v-img>
                 </v-avatar>
                 <v-card color="transparent" elevation="0" class="dot-collection">
                     <p>. . . . . . . . . . . . . . . . .</p>
@@ -36,11 +36,11 @@
                     <p>. . . . . . . . . . . . . . . . .</p>
                     <p>. . . . . . . . . . . . . . . . .</p>
                     <p>. . . . . . . . . . . . . . . . .</p>
-                </v-card>
-            </v-col>
-        </v-row>
-    </v-row>
-</v-container>
+                </v-card> -->
+            </div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>

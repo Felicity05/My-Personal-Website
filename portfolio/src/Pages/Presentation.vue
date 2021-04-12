@@ -1,8 +1,8 @@
 // TO DO: find a cool animation to put here
 <template>
-<v-container> 
+<div> 
     <!-- FIXME: fix animation to actually work on scroll -->
-    <v-row no-gutters class="mask" v-scrollanimation>
+    <div class="mask" v-scrollanimation>
         <ul class="items">
             <li>
                 <p class="display-4 start-text">code.</p>
@@ -14,24 +14,16 @@
                 <p class="display-1 start-text">inspire</p>
             </li>
         </ul>
-    </v-row>
+    </div>
 
     <!-- offset-lg-9 offset-md-9 offset-xs-9 offset-sm-9 -->
-    <v-row no-gutters >
-        <svg class="ml-auto mt-9" width="110" height="38" viewBox="0 0 110 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect y="16" width="88" height="22" fill="#92AF7D" />
-            <line x1="25.5561" y1="28.7698" x2="39.5561" y2="1.76984" stroke="black" />
-            <line x1="39.5561" y1="28.7698" x2="53.5561" y2="1.76984" stroke="black" />
-            <line x1="53.5561" y1="27.7698" x2="67.5561" y2="0.769841" stroke="black" />
-            <line x1="67.5561" y1="27.7698" x2="81.5561" y2="0.769841" stroke="black" />
-            <line x1="81.5561" y1="28.7698" x2="95.5561" y2="1.76984" stroke="black" />
-            <line x1="95.5561" y1="28.7698" x2="109.556" y2="1.76984" stroke="black" />
-        </svg>
-    </v-row>
+    <div >
+       <img src="../assets/images/green_vignette.svg" />
+    </div>
 
     <!-- <v-container no-gutters class="content" style="border: 1px solid purple"> -->
-        <v-row no-gutters class="row-wrap" >
-            <v-col md="7" sm="7" class="presentation-text typeWriter" >
+        <div class="row" >
+            <div  class="col presentation-text typeWriter" >
                 <!-- <div class="typeWriter"> -->
                 <p class=" hi-style  
                             text-sm-subtitle-1
@@ -53,30 +45,21 @@
                             text-lg-h5
                             text-xl-h5"> {{ typedText[2] }}</h5>
                 <!-- </div> -->
-            </v-col>
+            </div>
 
-            <v-col sm="5" class="sm-img-center" >
-                <v-img contain class="img-size" v-slot:placeholder src="../assets/girl-laptop-stool.png" transition="scale-transition" />
-            </v-col>
+            <div class="col sm-img-center" >
+                <img contain class="img-size" src="../assets/images/girl-laptop-stool.png" transition="scale-transition" />
+            </div>
 
-        </v-row>
+        </div>
     <!-- </v-container> -->
 
-    <v-row no-gutters >
-        <v-col>
-            <svg class="mb-12" width="110" height="37" viewBox="0 0 110 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="15" width="88" height="22" fill="#FABD02" />
-                <line x1="25.5561" y1="28.7698" x2="39.5561" y2="1.76984" stroke="black" />
-                <line x1="39.5561" y1="28.7698" x2="53.5561" y2="1.76984" stroke="black" />
-                <line x1="53.5561" y1="27.7698" x2="67.5561" y2="0.769841" stroke="black" />
-                <line x1="67.5561" y1="27.7698" x2="81.5561" y2="0.769841" stroke="black" />
-                <line x1="81.5561" y1="28.7698" x2="95.5561" y2="1.76984" stroke="black" />
-                <line x1="95.5561" y1="28.7698" x2="109.556" y2="1.76984" stroke="black" />
-            </svg>
-        </v-col>
-    </v-row>
+        <div>
+            <img src="../assets/images/yellow_vignette.svg"/>
+        </div>
 
-</v-container>
+
+</div>
 </template>
 
 <script>
