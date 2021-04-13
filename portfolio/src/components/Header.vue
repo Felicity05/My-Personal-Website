@@ -2,7 +2,7 @@
   <div class="hello">
     <nav class="navbar navbar-expand-lg justify-content-end">
       <a class="navbar-brand" href="#">
-        <img src="../assets/personal_logo.png" alt="personal brand" class="personal-logo" />
+        <img src="../assets/logos/personal_logo.png" alt="personal brand" class="personal-logo" />
       </a>
       <!-- <button class="btn btn-outline-success ml-auto mr-1 resume">Resume</button> -->
       <button
