@@ -84,6 +84,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden scroll;
+
 }
 a {
   color: #5cdb95;

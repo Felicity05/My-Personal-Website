@@ -37,9 +37,10 @@
 </template>
 
 <script>
+import ArelysResume from "../static/ArelysResume2019-1.pdf";
+
 export default {
   name: "Header",
-
   methods: {
     //custom function
     scrollTo(element) {
@@ -50,7 +51,7 @@ export default {
       });
     },
     openResumeNewTab: function() {
-      var pdf = "../static/Arelys's Resume 2019-1.pdf";
+      var pdf = ArelysResume;
       window.open(pdf, "_blank");
     }
   }
