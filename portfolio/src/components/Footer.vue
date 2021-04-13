@@ -4,7 +4,7 @@
     <div class="footer-content">
         <!-- started 2019 -->
         <div class="text">
-            <p>Made with ❤ by Arelys Alvarez © 2019 Updated 11/2020 </p>
+            <p>Made with ❤ by Arelys Alvarez © 2019 </p>
         </div>
         <div class="icons">
             <a class="icon" @click="openNewTab('https://github.com/Felicity05')">
@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .footer-content {
-    background-color: #8891A4;
+    background-color: #525357;
     flex-direction: column;
 }
 
@@ -58,7 +58,7 @@ export default {
 
 .fa {
     font-size: 24px;
-    color: #F79297;
+    color: #5cdb95;
 }
 
 /* .fa:hover {

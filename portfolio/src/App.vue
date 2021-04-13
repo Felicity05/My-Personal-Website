@@ -39,7 +39,7 @@ import Presentation from "./Pages/Presentation.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import About from "./Pages/About.vue";
-import Experience from "./Pages/Experience.vue";
+import Experience from "./Pages/Experience";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
 export default {
