@@ -1,11 +1,7 @@
 <template>
 <div>
     <div>
-        <svg width="44" height="47" viewBox="0 0 64 67" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 25px">
-            <ellipse cx="27" cy="39.5" rx="27" ry="27.5" fill="#FABD02" />
-            <path d="M61.5 27.5C61.5 41.3506 50.4879 52.5 37 52.5C23.5121 52.5 12.5 41.3506 12.5 27.5C12.5 13.6494 23.5121 2.5 37 2.5C50.4879 2.5 61.5 13.6494 61.5 27.5Z" stroke="#698191" stroke-width="5" />
-            <path d="M61.5 27.5C61.5 41.3506 50.4879 52.5 37 52.5C23.5121 52.5 12.5 41.3506 12.5 27.5C12.5 13.6494 23.5121 2.5 37 2.5C50.4879 2.5 61.5 13.6494 61.5 27.5Z" stroke="#698191" stroke-width="5" />
-        </svg>
+        <img src="../assets/svgs/circles_vignette" alt="">
         <div>
             <h2 class="diplay-4 know-me aos-init aos-animate" data-aos="fade" data-aos-duration="1000">Get to know me!</h2>
         </div>
