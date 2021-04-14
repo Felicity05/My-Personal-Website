@@ -56,71 +56,71 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.box {
-    // padding: 0;
-    margin: 0;
-}
+<style scoped>
+/* // .box {
+//     // padding: 0;
+//     margin: 0;
+// }
 
-.slideMenu {
-    top: 0px;
-    left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: absolute;
-    flex-direction: column;
-    // width: 100%;
-    height: 100%;
-    // padding-left: 200px;
-    background-color: rgba($color: #242424, $alpha: 1);
-    z-index: 999;
+// .slideMenu {
+//     top: 0px;
+//     left: 0px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//     position: absolute;
+//     flex-direction: column;
+//     // width: 100%;
+//     height: 100%;
+//     // padding-left: 200px;
+//     background-color: rgba($color: #242424, $alpha: 1);
+//     z-index: 999;
 
-    .sidebar-element {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 8px;
-        color: #fefefe;
-        // font-size: 60px;
-    }
+//     .sidebar-element {
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: center;
+//         margin-bottom: 8px;
+//         color: #fefefe;
+//         // font-size: 60px;
+//     }
 
-    .close-icon {
-        position: absolute;
-        top: 40px;
-        right: 200px;
-        color: #fefefe;
-        font-size: 34px;
-    }
-}
+//     .close-icon {
+//         position: absolute;
+//         top: 40px;
+//         right: 200px;
+//         color: #fefefe;
+//         font-size: 34px;
+//     }
+// }
 
-.menu-item {
-    font-weight: normal;
-}
+// .menu-item {
+//     font-weight: normal;
+// }
 
-.show {
+// .show {
 
-    &-enter,
-    &-leave-to {
-        opacity: 0;
-        transform: translateX(500px);
-    }
+//     &-enter,
+//     &-leave-to {
+//         opacity: 0;
+//         transform: translateX(500px);
+//     }
 
-    &-enter-active,
-    &-leave-active {
-        transition: all 500ms;
-    }
-}
+//     &-enter-active,
+//     &-leave-active {
+//         transition: all 500ms;
+//     }
+// }
 
-.fade {
-    &-enter {
-        opacity: 0;
-        transform: translateX(100px);
-    }
+// .fade {
+//     &-enter {
+//         opacity: 0;
+//         transform: translateX(100px);
+//     }
 
-    &-enter-active {
-        transition: all 500ms ease-in-out;
-        transition-delay: calc(50ms * var(--index));
-    }
-}
+//     &-enter-active {
+//         transition: all 500ms ease-in-out;
+//         transition-delay: calc(50ms * var(--index));
+//     }
+// } */
 </style>
