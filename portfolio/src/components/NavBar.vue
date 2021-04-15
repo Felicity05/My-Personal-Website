@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="/">
         <img src="../assets/svgs/signature.svg" alt="signature">
     </a>
-    <button class="btn btn-outline-success mr-sm-2" type="submit">Hello</button>
+    <button class="btn btn-outline-success mr-sm-2" type="submit">Helloooooooo</button>
   </nav>
 </template>
 
