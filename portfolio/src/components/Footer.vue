@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .footer-content {
-    background-color: #8891A4;
+    background-color: #7C828F;
     flex-direction: column;
 }
 
