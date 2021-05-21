@@ -1,29 +1,49 @@
 <template>
-<container>
+  <container>
     <!-- <v-responsive :aspect-ratio="3/2"> -->
     <div id="bg">
-    <img src="../assets/images/contact(1).png" class="image-fit" >
+      <img src="../assets/images/contact(1).png" class="image-fit" />
     </div>
-        <div class="row"  style="border: 1px solid red" >
-            <div cols="12">
-                <h2 class="diplay-4 page-title aos-init aos-animate" data-aos="fade" data-aos-duration="1000">Let's get in Touch!</h2>
-            </div>
+    <div class="row" style="border: 1px solid red">
+      <div cols="12">
+        <h2
+          class="diplay-4 page-title aos-init aos-animate"
+          data-aos="fade"
+          data-aos-duration="1000"
+        >
+          Let's get in Touch!
+        </h2>
+      </div>
 
-            <div cols="6" offset="3">
-                <p class="lead contact-message aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="1000">
-                    I’m very friendly and always open for new oportunities to learn and apply my knowledge.
-                    Feel free to drop me a message for bussiness inquieries or just to say hi... :)
-                </p>
-            </div>
+      <div cols="6" offset="3">
+        <p
+          class="lead contact-message aos-init aos-animate"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          I’m very friendly and always open for new oportunities to learn and
+          apply my knowledge. Feel free to drop me a message for bussiness
+          inquieries or just to say hi... :)
+        </p>
+      </div>
 
-            <div cols="6" offset="3" style="border: 1px solid orange" class=" aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
-                <button class="ma-2" outlined color="#F79297" align="center">
-                    <a href="mailto:aalva456@fiu.edu?subject=Hi, how are you?">Contact me!</a>
-                </button>
-            </div>
-        </div>
-        <img>
-    
+      <div
+        cols="6"
+        offset="3"
+        style="border: 1px solid orange"
+        class="aos-init aos-animate"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <button class="ma-2" outlined color="#F79297" align="center">
+          <a href="mailto:aalva456@fiu.edu?subject=Hi, how are you?"
+            >Contact me!</a
+          >
+        </button>
+      </div>
+    </div>
+    <img />
+
     <!-- </v-responsive> -->
 
     <!-- <div class="top aos-init aos-animate" data-aos="fade" data-aos-duration="1000">
@@ -31,29 +51,28 @@
             <i class="material-icons my-float">home</i>
         </a>
     </div> -->
-
-</container>
+  </container>
 </template>
 
 <script>
 export default {
-    name: "Contact",
+  name: "Contact",
 
-    methods: {
-        scrollTo(element) {
-            const el = document.querySelector("#" + element);
-            el.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }
-    }
+  methods: {
+    scrollTo(element) {
+      const el = document.querySelector("#" + element);
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    },
+  },
 };
 </script>
 
 <style scoped>
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* .contact {
@@ -63,23 +82,22 @@ a {
 } */
 
 #bg {
-  position: fixed; 
-  top: 0%; 
-  left: 0%; 
-  width: 100%; 
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
   height: 100%;
 }
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
 }
-
 
 /* .img {
     opacity: 30%;
@@ -93,16 +111,16 @@ a {
 } */
 
 .page-title {
-    text-align: left;
-    padding-bottom: 5em;
-    padding-top: 0.7em;
-    color: #698191;
+  text-align: left;
+  padding-bottom: 5em;
+  padding-top: 0.7em;
+  color: #698191;
 }
 
 .contact-message {
-    /* margin: 1em 13em auto; */
-    text-align: center;
-    /* margin-bottom: 5em; */
+  /* margin: 1em 13em auto; */
+  text-align: center;
+  /* margin-bottom: 5em; */
 }
 /* 
 .image-fit{

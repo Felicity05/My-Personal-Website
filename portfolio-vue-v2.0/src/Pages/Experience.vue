@@ -9,7 +9,7 @@
                 <transition name="fade" mode="out-in">
                     <div class="cigna" v-if="isShown" key="1">
                         <h5 class="diplay-4 job-title">AI Robotics Automation – Production Support Intern</h5>
-                        <h6 class="diplay-4 time">May 2019 – present</h6>
+                        <h6 class="diplay-4 time">May 2019 – December 2019</h6>
                         <ul class="description">
                             <li>Support production bots and fix any issues that bots may present</li>
                             <li>Assist with deployment of new bots going into production</li>
