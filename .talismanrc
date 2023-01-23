@@ -1,0 +1,54 @@
+fileignoreconfig:
+- filename: node_modules/.yarn-integrity
+  checksum: 1bb18913046c689b2b2d04ee3fb707af6bb9027bc9d2954ab45427fca42f37c1
+- filename: node_modules/@types/hoist-non-react-statics/index.d.ts
+  checksum: da46d3fbf3ba63e7cc0119471dfceaa4a835797ef8177f7808ed11c12948a404
+- filename: node_modules/@types/hoist-non-react-statics/package.json
+  checksum: ed133695df1cacf652359be062c406b9bd93d635b5f0fe6466f1c04e8e1870b0
+- filename: node_modules/@types/prop-types/index.d.ts
+  checksum: ee591363437e47b0dc908042d7a60edf64fdc96163fd8875c8372164ca47c8c2
+- filename: node_modules/@types/prop-types/package.json
+  checksum: 60681b01368e9fef55d49b695dcadb7eb01ae735668c02fac540fa4538896081
+- filename: node_modules/@types/react/index.d.ts
+  checksum: 5f98bdc975f4897bb6421c44c0a3935c9f6cf7886caef0d7090f5e89bf6aa14a
+- filename: node_modules/@types/react/next.d.ts
+  checksum: 44bcfc4a3bfb9e4c00fe7ec4688d7bdbc7e9c2ab082b56317bb09f3337568145
+- filename: node_modules/@types/react/package.json
+  checksum: cb4a5c5eaa051eaa593e1712a15513329d1db40811c8a70e5cb804dcf7c3a9c5
+- filename: node_modules/@types/scheduler/package.json
+  checksum: 23e2fb210adca82413edfafcc1f3ce5d1781d363982be1494832db2cf91f0e90
+- filename: node_modules/@types/styled-components/index.d.ts
+  checksum: 0cb91a9698714f0c99d762ba52dddb25e765d2fd2b3cbbfdb57a568846ad76f4
+- filename: node_modules/@types/styled-components/package.json
+  checksum: a4324139acf26284ac5059b68a4ff1504fef01e0c78f23d8816d068bebce2337
+- filename: node_modules/csstype/index.d.ts
+  checksum: 109221d3df88d93b1780046ed9ba7ff8cd49793876ea2e31b33f1ba5715e5781
+- filename: node_modules/csstype/package.json
+  checksum: 2383f572463829fb91fdf13b399fb92577c488ada5e92630d2f8e074677b9967
+- filename: node_modules/hoist-non-react-statics/CHANGELOG.md
+  checksum: eb4d238394fbdf229e77df510719529102a8ac8f91114531a043ee0642e58d7d
+- filename: node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
+  checksum: 6232e02c98deaa49b0767ffee1851b4ac93a8220d7048c7357d789ec8245dd17
+- filename: node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.js
+  checksum: aba532cecdb04f902e22a18725309904cf483b394213ff8cd49a120f8a7da6ed
+- filename: node_modules/hoist-non-react-statics/src/index.js
+  checksum: 2137cd18a6aaca4dc8921ca1b90727872480fcb818b25161fd5dfe36901d3595
+- filename: portfolio_v0.1_react/package-lock.json
+  checksum: 9daceec8ceff08accca36cf8eae37a654f1131a327053660ab92d40aa7f0bcd8
+- filename: portfolio_v0.1_react_ts/package-lock.json
+  checksum: 4d2f11e43c0f65d5d1fe9e985c3dd468b9a0cf7d42efa51955196c1bdea081f4
+- filename: portfolio_v0.1_react_ts/src/assets/girl-laptop-stool 1.svg
+  checksum: c1cb877285e34e289c208990a4a281a1f7b718eb4680f9dace39f807421e1399
+- filename: portfolio_v0.1_react_ts/src/assets/girl-laptop-stool.svg
+  checksum: 2da7a3561868c1278eaf38402b9726966c86e10e665372ddea447c01f3866883
+- filename: portfolio_v0.1_react_ts/src/assets/nyc skyline 1.svg
+  checksum: 0a4f4e34fd5f14e1ee39f9978f3a479bf57f6e7d4f5f4e34f3fe596dca9cd509
+- filename: portfolio_v0.1_react_ts/src/assets/nyc_skyline1.svg
+  checksum: dc344151a56134b316095f2bc3a56bdf91c9c248e3cbdf3bb4e0b257ac107a8d
+- filename: portfolio_v0.1_react_ts/src/react-app-env.d.ts
+  checksum: 37a736e53c8bdf5bb7a1c32e622b00332ae7be2698ff0c020134d03b9d50a6bc
+- filename: portfolio_v0.1_react_ts/yarn.lock
+  checksum: e853aa6fb6435ba9f98f10f852d569a4c9ecf814799124eb3acdacb3d20f31a4
+- filename: yarn.lock
+  checksum: 0301ec458d7161e360f324155b05f6a49317c161f103638edb237f4a1e413cc2
+version: "1.0"

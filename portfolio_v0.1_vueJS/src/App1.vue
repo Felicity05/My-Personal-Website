@@ -1,5 +1,7 @@
 <template>
-   <div class="container-fluid" id="app">
+  <div class="container-fluid" id="app">
+
+    <!-- <landing-page></landing-page> -->
 
     <header class="header" id="home">
         <Header />
@@ -10,7 +12,7 @@
         <Presentation />
       </section>
 
-      <section class="about" id="about">
+      <!-- <section class="about" id="about">
         <About />
       </section>
 
@@ -24,7 +26,7 @@
 
       <section class="contact" id="contact">
         <Contact />
-      </section>
+      </section> -->
     </div>
 
     <footer class="footer">
@@ -35,13 +37,17 @@
 </template>
 
 <script>
-import Presentation from "./Pages/Presentation.vue";
-import Header from "./components/Header.vue";
+import Presentation from "./components/Presentation.vue";
+import Layout from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import About from "./Pages/About.vue";
-import Experience from "./Pages/Experience";
-import Contact from "./Pages/Contact";
-import Projects from "./Pages/Projects";
+import About from "./components/About.vue";
+import Experience from "./components/Experience.vue";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import LandingPage from "./components/LandingPage";
+
+
+
 export default {
   name: "app",
   components: {
@@ -51,7 +57,8 @@ export default {
     About,
     Experience,
     Contact,
-    Projects
+    Projects,
+    LandingPage,
   },
   methods: {
     //custom function
@@ -70,19 +77,18 @@ export default {
 }
 </script>
 
+
 <style>
-#app {
+body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #ffffff;
+  color: #698191;
   /* #2c3e50*/
-  background: #212b36;
+  background: #F9F2E6;
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden scroll;
 }
 a {
   color: #5cdb95;
@@ -113,6 +119,4 @@ a:not([href]):not([tabindex]) {
   padding: 0;
   margin: 0;
 }
-
-@import'~bootstrap/dist/css/bootstrap.css'
 </style>

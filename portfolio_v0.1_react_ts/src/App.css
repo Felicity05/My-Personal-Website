@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: #E5E5E5;*/
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aldrich Regular'), url('./fonts/Aldrich-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Antic";   /*Can be any text*/
+    src: local("Antic-Regular"),
+    url("./fonts/Antic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BadScript";   /*Can be any text*/
+    src: local("BadScript-Regular 2"),
+    url("./fonts/BadScript-Regular 2.ttf") format("truetype");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
