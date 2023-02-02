@@ -1,0 +1,163 @@
+.logo {
+    cursor: pointer;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.hamBox {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    padding: 2.4em;
+}
+
+.hamBox:hover {
+    background: #2a2a2f;
+}
+
+.hamBoxOpen {
+    background: #2a2a2f;
+}
+
+.lineTop,
+.lineMiddle,
+.lineBottom {
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.lineTop {
+    top: 2.2em;
+}
+
+.lineMiddle {
+    top: 2.2em;
+}
+
+.lineMiddle:hover {
+    width: 35px;
+    right: 0;
+}
+
+.lineBottom {
+    bottom: 2.2em;
+}
+
+.lineTop.spin {
+    top: 2.35em;
+    transform: rotate(135deg);
+    background: #fff;
+}
+
+.lineMiddle.disapear {
+    display: none;
+}
+
+.lineBottom.spin {
+    bottom: 2.35em;
+    transform: rotate(225deg);
+    background: #fff;
+}
+
+/* menu background & transition */
+.menu-overlay {
+    position: fixed;
+    background: #18181c;
+    z-index: -2;
+    right: -100%;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 4em;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* links position */
+ul.nav-links {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 5rem;
+    left: 25rem;
+    /* align-self: center;*/
+}
+
+ul.nav-links li {
+    list-style: none;
+    position: relative;
+}
+
+/* links transition and font style */
+ul.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Antic';
+    font-size: 6em;
+    position: relative;
+    top: 0;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/*todo: figure out how to change the color for each link*/
+ul.nav-links li a:before {
+    background: rgba(244, 201, 153, 0.57);
+    content: "";
+    width: 115%;
+    height: 45%;
+    bottom: 0;
+    left: -15px;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+ul.nav-links li a:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-item-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: #18181c;
+    margin: 0 auto;
+}

@@ -1,12 +1,14 @@
-<svg width="460" height="857" viewBox="0 0 460 857" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 230C2 104.079 104.079 2 230 2C355.921 2 458 104.079 458 230V855H2V230Z" fill="#D9D9D9" stroke="black" stroke-width="4"/>
-<line x1="4" y1="213" x2="456" y2="213" stroke="black" stroke-width="4"/>
-<line y1="328" x2="460" y2="328" stroke="black" stroke-width="4"/>
-<line y1="443" x2="460" y2="443" stroke="black" stroke-width="4"/>
-<line y1="558" x2="460" y2="558" stroke="black" stroke-width="4"/>
-<line y1="673" x2="460" y2="673" stroke="black" stroke-width="4"/>
-<line y1="788" x2="460" y2="788" stroke="black" stroke-width="4"/>
-<line x1="239" y1="3" x2="239" y2="857" stroke="black" stroke-width="4"/>
-<line x1="363" y1="44" x2="363" y2="857" stroke="black" stroke-width="4"/>
-<line x1="126" y1="28" x2="126" y2="857" stroke="black" stroke-width="4"/>
+<svg width="460" height="857" viewBox="0 0 460 857"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 230C2 104.079 104.079 2 230 2C355.921 2 458 104.079 458
+230V855H2V230Z" fill="none" stroke="black" stroke-width="4"/>
+    <line x1="4" y1="213" x2="456" y2="213" stroke="black" stroke-width="4"/>
+    <line y1="328" x2="460" y2="328" stroke="black" stroke-width="4"/>
+    <line y1="443" x2="460" y2="443" stroke="black" stroke-width="4"/>
+    <line y1="558" x2="460" y2="558" stroke="black" stroke-width="4"/>
+    <line y1="673" x2="460" y2="673" stroke="black" stroke-width="4"/>
+    <line y1="788" x2="460" y2="788" stroke="black" stroke-width="4"/>
+    <line x1="239" y1="3" x2="239" y2="857" stroke="black" stroke-width="4"/>
+    <line x1="363" y1="44" x2="363" y2="857" stroke="black" stroke-width="4"/>
+    <line x1="126" y1="28" x2="126" y2="857" stroke="black" stroke-width="4"/>
 </svg>

@@ -1,44 +1,29 @@
-import { ReactComponent as Signature } from '../assets/Signature.svg';
-import { ReactComponent as MenuIcon } from '../assets/MenuIcon.svg';
 import { Home } from '../Pages/Home';
-import React, { FC, useState } from 'react';
+import { FC } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import { NavBar } from './NavBar';
 import styled from 'styled-components';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { SlidingMenu } from './SlidingMenu';
 
 const Container = styled.div`
-    margin: 0 auto;
-    height: 100vh;
-    padding-top: 80px;
+   margin: 0 auto;
+   height: 100vh;
 `;
+
 const NavBarContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1480px;
-    margin: auto;
+   margin: auto;
 `;
 
 export const Layout: FC = () => {
-    const navigate = useNavigate();
     const location = useLocation();
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <Container>
-            {isOpen ? <SlidingMenu setIsOpen={setIsOpen} /> :
-                <>
-                    <NavBarContainer>
-                        {/* Your layout code here, e.g. a navigation menu */}
-                        <Signature onClick={() => {
-                            navigate('/');
-                        }} style={{ cursor: 'pointer' }} />
-                        <MenuIcon onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }} />
-                    </NavBarContainer>
-                    {location.pathname === '/' ? <Home /> : <Outlet />}
-                </>
-            }
+            {/* Your layout code here, e.g. a navigation menu */}
+            <NavBarContainer>
+                {/* navbar here */}
+                <NavBar />
+            </NavBarContainer>
+            {location.pathname === '/' ? <Home /> : <Outlet />}
         </Container>
     );
 };

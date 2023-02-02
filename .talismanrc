@@ -1,4 +1,8 @@
 fileignoreconfig:
+- filename: Photoshop files/AI illustrations/AdobeStock_432812296.ai
+  checksum: c35006fb20a61d8daf307ff691d1b35f54607be1d9a996f5028fd3e89e031de2
+- filename: Photoshop files/AI illustrations/AdobeStock_459322385.ai
+  checksum: 97bca2187dd6feb16b90fa3a11d33c0ff819a5095d3a57a26bc04ba835dfb2cf
 - filename: node_modules/.yarn-integrity
   checksum: 1bb18913046c689b2b2d04ee3fb707af6bb9027bc9d2954ab45427fca42f37c1
 - filename: node_modules/@types/hoist-non-react-statics/index.d.ts
@@ -35,8 +39,14 @@ fileignoreconfig:
   checksum: 2137cd18a6aaca4dc8921ca1b90727872480fcb818b25161fd5dfe36901d3595
 - filename: portfolio_v0.1_react/package-lock.json
   checksum: 9daceec8ceff08accca36cf8eae37a654f1131a327053660ab92d40aa7f0bcd8
+- filename: portfolio_v0.1_react_ts/.env
+  checksum: dbec524a677de44266453d68b392f0613ea4fe8c04784b152d03e0ee6af3da2b
 - filename: portfolio_v0.1_react_ts/package-lock.json
   checksum: 4d2f11e43c0f65d5d1fe9e985c3dd468b9a0cf7d42efa51955196c1bdea081f4
+- filename: portfolio_v0.1_react_ts/src/assets/Group 12.svg
+  checksum: 6a8f01affa8d32bdc5c75de12293a7e63ce651c568a6fc2a9e1c92a462ad17b5
+- filename: portfolio_v0.1_react_ts/src/assets/Group 8.svg
+  checksum: 8c149fb1ea516459f987f4c2728f05bda1ce89a20161fe71dfadac5f09cfcd09
 - filename: portfolio_v0.1_react_ts/src/assets/girl-laptop-stool 1.svg
   checksum: c1cb877285e34e289c208990a4a281a1f7b718eb4680f9dace39f807421e1399
 - filename: portfolio_v0.1_react_ts/src/assets/girl-laptop-stool.svg
@@ -48,7 +58,7 @@ fileignoreconfig:
 - filename: portfolio_v0.1_react_ts/src/react-app-env.d.ts
   checksum: 37a736e53c8bdf5bb7a1c32e622b00332ae7be2698ff0c020134d03b9d50a6bc
 - filename: portfolio_v0.1_react_ts/yarn.lock
-  checksum: e853aa6fb6435ba9f98f10f852d569a4c9ecf814799124eb3acdacb3d20f31a4
+  checksum: 34937b392dc70d343d598ccb719c023d9332224e147ca83a37654cede9265f94
 - filename: yarn.lock
   checksum: 0301ec458d7161e360f324155b05f6a49317c161f103638edb237f4a1e413cc2
 version: "1.0"

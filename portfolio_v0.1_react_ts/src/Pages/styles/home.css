@@ -1,0 +1,7 @@
+.window-background {
+    /*background: linear-gradient(#e66465, #9198e5);*/
+    background: linear-gradient(180deg,
+    rgba(83, 85, 214, 1), rgba(155, 97, 188, 1),
+    rgba(238, 110, 159, 0.8) 60%, rgba(255, 209, 104, 0.5));
+    border-radius: 30em 30em 0 0;
+}

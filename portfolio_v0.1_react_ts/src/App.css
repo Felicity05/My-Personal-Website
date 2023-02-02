@@ -2,7 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*background-color: #E5E5E5;*/
+}
+
+body {
+    background-color: #EBE7E7; /* // #E5E5E5; */
 }
 
 @font-face {
@@ -23,6 +26,7 @@
     src: local("BadScript-Regular 2"),
     url("./fonts/BadScript-Regular 2.ttf") format("truetype");
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
