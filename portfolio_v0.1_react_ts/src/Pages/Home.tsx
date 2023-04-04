@@ -50,6 +50,7 @@ const BackgroundImageContainer = styled.div`
    bottom: 0;
    display: flex;
    justify-content: center;
+  height: 470px;
 `;
 
 export const Home = () => {
@@ -76,7 +77,7 @@ export const Home = () => {
                                 internet!</p>
                         </GreetingContainer>
                         <ImageContainer>
-                            <Girl />
+                            <Girl style={{ width: '100%', height: '93%'}}/>
                         </ImageContainer>
                         <BackgroundImageContainer>
                             <NycSkyline style={{ backgroundBlendMode: 'overlay' }} />

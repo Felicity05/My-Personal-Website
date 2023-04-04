@@ -2,7 +2,7 @@
 
 export const About = () => {
   return(
-      <div>
+      <section style={{height: '100vh'}}>
           <h1>Get to know me!</h1>
           <p>Hello, my name is Arelys Alvarez.
               I’m a Software Engineer based in the New York Metropolitan area with a passion for coding and design.
@@ -13,6 +13,6 @@ export const About = () => {
               When I’m not coding, I love cooking, traveling and spending time with my family and friends!
 
               You can check out some of my personal projects here!</p>
-      </div>
+      </section>
   )
 }
